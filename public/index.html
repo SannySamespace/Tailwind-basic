@@ -12,7 +12,7 @@
       <nav class="text-right">
         <div class="flex justify-between items-center">
           <h1 class="font-bold uppercase p-4 border-b border-gray-100">
-            <a href="/" class="hover:text-gray-700">Food Ninja</a>
+            <a href="/" class="hover:text-gray-700 tracking-widest">Food Club</a>
           </h1>
           <div class="px-4 cursor-pointer md:hidden" id="burger">
             <svg class="w-6 h-6" fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" stroke="currentColor" viewBox="0 0 24 24"><path d="M4 6h16M4 12h16M4 18h16"></path></svg>
@@ -43,49 +43,49 @@
   
     <main class="px-16 py-6 md:col-span-2 bg-gray-100">
       <div class="flex justify-center md:justify-end">
-        <a href="#" class="btn text-primary border-primary md:border-2 hover:bg-primary hover:text-white transition ease-out duration-500">Log in</a>
-        <a href="#" class="btn text-primary ml-2 border-primary md:border-2 hover:bg-primary hover:text-white transition ease-out duration-500">Sign up</a>
+        <a href="#" class="btn rounded-full py-2 px-3 uppercase text-xs font-bold tracking-wider cursor-pointer text-primary border-primary md:border-2 hover:bg-primary hover:text-white transition ease-out duration-500">Log in</a>
+        <a href="#" class="btn rounded-full py-2 px-3 uppercase text-xs font-bold tracking-wider cursor-pointer text-primary ml-2 border-primary md:border-2 hover:bg-primary hover:text-white transition ease-out duration-500">Sign up</a>
       </div>
 
-      <header>
-        <h2 class="text-gray-700 text-6xl font-semibold">Recipes</h2>
-        <h3 class="text-2xl font-semibold">For Ninjas</h3>
+      <header class="mt-4">
+        <h2 class="text-gray-700 text-5xl font-semibold leading-none tracking-wider">Our Recipes</h2>
+        <h3 class="text-2xl font-semibold tracking-wider">For Sanny</h3>
       </header>
 
       <div>
         <h4 class="font-bold pb-2 mt-12 border-b border-gray-200">Latest Recipes</h4>
   
         <div class="mt-8 grid lg:grid-cols-3 gap-10">
-          <!-- cards go here -->
-          <div class="card hover:shadow-lg"> 
+          <!-- rounded bg-white border-gray-200 shadow-md overflow-hidden relatives go here -->
+          <div class="rounded bg-white border-gray-200 shadow-md overflow-hidden relative hover:shadow-lg"> 
             <img src="img/stew.jpg" alt="stew" class="h-32 sm:h-48 w-full object-cover">
             <div class="m-4">
               <span class="font-bold">5 Bean Chili Stew</span>
-              <span class="block text-gray-500 text-sm">Recipe by Mario</span>
+              <span class="block text-gray-500 text-sm">Recipe by Deepak</span>
             </div>
-            <div class="badge">
+            <div class="absolute top-0 ml-2 p-2 mt-2 bg-secondary-100 text-secondary-200 text-xs uppercase font-bold rounded-full">
               <svg class="inline-block w-5" fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" stroke="currentColor" viewBox="0 0 24 24"><path d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
               <span>25 mins</span>
             </div>
           </div>
-          <div class="card hover:shadow-lg"> 
+          <div class="rounded bg-white border-gray-200 shadow-md overflow-hidden relative hover:shadow-lg"> 
             <img src="img/noodles.jpg" alt="noodles" class="h-32 sm:h-48 w-full object-cover">
             <div class="m-4">
               <span class="font-bold">Veg Noodles</span>
-              <span class="block text-gray-500 text-sm">Recipe by Mario</span>
+              <span class="block text-gray-500 text-sm">Recipe by Ankesh</span>
             </div>
-            <div class="badge">
+            <div class="absolute top-0 ml-2 p-2 mt-2 bg-secondary-100 text-secondary-200 text-xs uppercase font-bold rounded-full">
               <svg class="inline-block w-5" fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" stroke="currentColor" viewBox="0 0 24 24"><path d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
               <span>25 mins</span>
             </div>
           </div>
-          <div class="card hover:shadow-lg"> 
+          <div class="rounded bg-white border-gray-200 shadow-md overflow-hidden relative hover:shadow-lg"> 
             <img src="img/curry.jpg" alt="curry" class="h-32 sm:h-48 w-full object-cover">
             <div class="m-4">
               <span class="font-bold">Tofu Curry</span>
-              <span class="block text-gray-500 text-sm">Recipe by Mario</span>
+              <span class="block text-gray-500 text-sm">Recipe by Mintu</span>
             </div>
-            <div class="badge">
+            <div class="absolute top-0 ml-2 p-2 mt-2 bg-secondary-100 text-secondary-200 text-xs uppercase font-bold rounded-full">
               <svg class="inline-block w-5" fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" stroke="currentColor" viewBox="0 0 24 24"><path d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
               <span>25 mins</span>
             </div>
@@ -94,13 +94,46 @@
 
         <h4 class="font-bold pb-2 mt-12 border-b border-gray-200">Most Popular</h4>
 
-        <div class="mt-8">
-          <!-- cards go here -->
+        <div class="mt-8 grid lg:grid-cols-3 gap-10">
+          <!-- rounded bg-white border-gray-200 shadow-md overflow-hidden relatives go here -->
+          <div class="rounded bg-white border-gray-200 shadow-md overflow-hidden relative hover:shadow-lg"> 
+            <img src="img/stew.jpg" alt="stew" class="h-32 sm:h-48 w-full object-cover">
+            <div class="m-4">
+              <span class="font-bold truncate block">5 Bean Chili Stew with Feta Cheese</span>
+              <span class="block text-gray-500 text-sm">Recipe by Rakesh</span>
+            </div>
+            <div class="absolute top-0 ml-2 p-2 mt-2 bg-secondary-100 text-secondary-200 text-xs uppercase font-bold rounded-full">
+              <svg class="inline-block w-5" fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" stroke="currentColor" viewBox="0 0 24 24"><path d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+              <span>25 mins</span>
+            </div>
+          </div>
+          <div class="rounded bg-white border-gray-200 shadow-md overflow-hidden relative hover:shadow-lg"> 
+            <img src="img/noodles.jpg" alt="noodles" class="h-32 sm:h-48 w-full object-cover">
+            <div class="m-4">
+              <span class="font-bold">Veg Noodles</span>
+              <span class="block text-gray-500 text-sm">Recipe by Arpit</span>
+            </div>
+            <div class="absolute top-0 ml-2 p-2 mt-2 bg-secondary-100 text-secondary-200 text-xs uppercase font-bold rounded-full">
+              <svg class="inline-block w-5" fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" stroke="currentColor" viewBox="0 0 24 24"><path d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+              <span>25 mins</span>
+            </div>
+          </div>
+          <div class="rounded bg-white border-gray-200 shadow-md overflow-hidden relative hover:shadow-lg"> 
+            <img src="img/curry.jpg" alt="curry" class="h-32 sm:h-48 w-full object-cover">
+            <div class="m-4">
+              <span class="font-bold">Tofu Curry</span>
+              <span class="block text-gray-500 text-sm">Recipe by Raja</span>
+            </div>
+            <div class="absolute top-0 ml-2 p-2 mt-2 bg-secondary-100 text-secondary-200 text-xs uppercase font-bold rounded-full">
+              <svg class="inline-block w-5" fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" stroke="currentColor" viewBox="0 0 24 24"><path d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+              <span>25 mins</span>
+            </div>
+          </div>
         </div>
       </div>
 
       <div class="mt-12 flex justify-center">
-        <div class="btn p-3 rounded-lg bg-gray-300 text-secondary-200 inline-block hover:shadow-inner transform hover:scale-125 hover:bg-opacity-50 transition ease-out duration-300">Load more</div>
+        <div class="btn rounded-full py-2 px-3 uppercase text-xs font-bold tracking-wider cursor-pointer bg-secondary-100 text-secondary-200 inline-block hover:shadow-inner transform hover:scale-125 hover:bg-opacity-50 transition ease-out duration-300">Load more</div>
       </div>    
     </main>
   </div>
